@@ -15,4 +15,12 @@ const config = require('./resources/assets/config');
 mix.js('resources/assets/scripts/main.js', 'dist/scripts')
    .sass('resources/assets/styles/main.scss', 'dist/styles');
 
-mix.browserSync(config.devUrl);
+mix.browserSync({
+  proxy: config.devUrl,
+  files: [
+    'app/**/*.php',
+    'resources/views/**/*.php',
+    'dist/scripts/**/*.js',
+    'dist/styles/**/*.css'
+  ]
+});
