@@ -1,9 +1,9 @@
 {
-  "name": "roots/sage",
+  "name": "cdk/theme",
   "type": "wordpress-theme",
   "license": "MIT",
   "description": "WordPress starter theme with a modern development workflow",
-  "homepage": "https://roots.io/sage/",
+  "homepage": "https://github.com/cdk-comp/theme",
   "authors": [
     {
       "name": "Ben Word",
@@ -14,14 +14,18 @@
       "name": "Scott Walkinshaw",
       "email": "scott.walkinshaw@gmail.com",
       "homepage": "https://github.com/swalkinshaw"
+    },
+    {
+      "name": "Zorca Orcinus",
+      "email": "vs@zorca.org",
+      "homepage": "https://zorca.org"
     }
   ],
   "keywords": [
     "wordpress"
   ],
   "support": {
-    "issues": "https://github.com/roots/sage/issues",
-    "forum": "https://discourse.roots.io/"
+    "issues": "https://github.com/cdk-comp/theme/issues"
   },
   "autoload": {
     "psr-4": {
