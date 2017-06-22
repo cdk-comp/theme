@@ -1,16 +1,24 @@
-@import "common/variables";
-
+// Main
 // Import npm dependencies
-@import "~bootstrap/scss/bootstrap";
+@import "~scut/dist/scut";
 
+// Nuclides
+@import "nuclides/variables";
+@import "nuclides/colors";
+@import "nuclides/mixins";
+
+// Common
+@import "common/fonts";
+@import "common/typography";
 @import "common/global";
-@import "components/buttons";
-@import "components/comments";
-@import "components/forms";
-@import "components/wp-classes";
-@import "layouts/header";
-@import "layouts/sidebar";
-@import "layouts/footer";
-@import "layouts/pages";
-@import "layouts/posts";
-@import "layouts/tinymce";
+@import "common/wp-classes";
+
+// Atoms
+@import "atoms/icons";
+@import "atoms/button";
+
+// Molecules
+
+// Structures
+@import "structures/header";
+@import "structures/footer";

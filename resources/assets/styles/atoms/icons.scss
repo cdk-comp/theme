@@ -1,0 +1,8 @@
+/**
+ * @icon test icon
+ * @markup
+ *  <i class="icon">Icon</i>
+ */
+.icon:before {
+  content: "\EA01"
+}

@@ -4,12 +4,15 @@
       "./scripts/main.js",
       "./styles/main.scss"
     ],
+    "critical": [
+      "./styles/critical.scss"
+    ],
     "customizer": [
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/themes/sage",
-  "devUrl": "http://example.dev",
+  "publicPath": "/app/themes/theme",
+  "devUrl": "http://theme.dev",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

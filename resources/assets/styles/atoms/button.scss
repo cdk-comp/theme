@@ -1,0 +1,17 @@
+/**
+ * @atom Button
+ * @section Navigation > Buttons
+ * @modifiers
+ *  .button--alert an alert button
+ * @markup
+ *  <button class="button">
+ *    A button
+ *  </button>
+ *  <button class="button button--alert">
+ *    An alert button
+ *  </button>
+ */
+.button {
+  /* ... */
+  &.button--alert { /* ... */ }
+}
