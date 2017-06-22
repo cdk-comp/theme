@@ -1,0 +1,20 @@
+{
+  "title": "Nucleus",
+  "files": [
+    "./resources/assets/styles/*.scss",
+    "./resources/assets/styles/nuclides/colors.scss",
+    "./resources/assets/styles/nuclides/variables.scss",
+    "./resources/assets/styles/nuclides/mixins.scss",
+    "./resources/assets/styles/atoms/*.scss",
+    "./resources/assets/styles/molecules/*.scss",
+    "./resources/assets/styles/structures/*.scss",
+    "./resources/assets/styles/common/*.scss"
+  ],
+  "target": "styleguide",
+  "css": "http://domain.dev/app/themes/theme/dist/styles/main.css",
+  "namespace": "page",
+  "verbose": 3,
+  "counterCSS": null,
+  "staticLipsum": false,
+  "placeholderService": false
+}

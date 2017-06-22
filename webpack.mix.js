@@ -12,15 +12,34 @@ const config = require('./resources/assets/config');
  |
  */
 
+mix.webpackConfig({
+    resolve: {
+        modules: [
+            'node_modules'
+        ],
+        enforceExtension: false
+    }
+});
+
 mix.js('resources/assets/scripts/main.js', 'dist/scripts')
-   .sass('resources/assets/styles/main.scss', 'dist/styles');
+    .sass('resources/assets/styles/main.scss', 'dist/styles')
+    .options({
+        processCssUrls: false
+    })
+    .sass('resources/assets/styles/critical.scss', 'dist/styles')
+    .options({
+        processCssUrls: false
+    })
+    .copyDirectory('resources/assets/fonts/', 'dist/fonts')
+    .copyDirectory('resources/assets/images/', 'dist/images');
 
 mix.browserSync({
-  proxy: config.devUrl,
-  files: [
-    'app/**/*.php',
-    'resources/views/**/*.php',
-    'dist/scripts/**/*.js',
-    'dist/styles/**/*.css'
-  ]
+    proxy: config.devUrl,
+    delay: 500,
+    files: [
+        'app/**/*.php',
+        'resources/views/**/*.php',
+        'dist/scripts/**/*.js',
+        'dist/styles/**/*.css'
+    ]
 });
